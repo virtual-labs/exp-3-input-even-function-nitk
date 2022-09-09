@@ -2,37 +2,88 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "This is a Sample Question 1?",
+      "question": "\"The expression of an XOR gate is —",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "A’.B+A.B’",
+        "b": "A.B+A’.B’",
+        "c": "A.B’",
+        "d": "A.A’+B.B’"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
       },
       "correctAnswer": "a",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "\"The expression of an EXOR gate is —",
+      "answers": {
+        "a": "A’.B",
+        "b": "A.B+A’.B’",
+        "c": "A’.B+A.B’",
+        "d": "A.A’+B.B"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "c",
+      "difficulty": "advanced"
+    },
+    {
+      "question": "For a circuit with k lines _______ single stuck at faults is possible.",
+      "answers": {
+        "a": "k",
+        "b": "2k",
+        "c": "k/2",
+        "d": "k^2"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "b",
       "difficulty": "beginner"
     },
     {
-      "question": "This is a Sample Question 2?",
+      "question": " When logic gates are connected to form a gating/logic network it is called as a ______ logic circuit.",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "Combinational",
+        "b": "Sequential",
+        "c": "Hardwires",
+        "d": "Systematic"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
       },
-      "correctAnswer": "c",
+      "correctAnswer": "a",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "The total number of distinct multiple stuck at faults possible in a circuit with n lines is—",
+      "answers": {
+        "a": "3^n",
+        "b": "3^n-1",
+        "c": "2^n-1",
+        "d": "2"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "b",
       "difficulty": "beginner"
     }
   ]
