@@ -1,0 +1,205 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* outline: 1px solid red; */
+  }
+
+  body {
+    background: #fafafa;
+    font-family: "Roboto", sans-serif;
+    color: #333;
+    line-height: 1.5;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  ul {
+    list-style: none;
+  }
+
+  .container {
+    width: 96%;
+    margin: auto;
+    max-width: 1440px;
+  }
+
+  .circuit-main {
+    width: 960px;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .switch {
+    position: absolute;
+    height: 40px;
+    width: 70px;
+  }
+
+  #switchA {
+    left: 88px;
+    top: 153px;
+  }
+
+  #switchB {
+    left: 88px;
+    top: 236px;
+  }
+
+  #switchC {
+    left: 88px;
+    top: 442px;
+  }
+
+  .bulb {
+    position: absolute;
+    height: 120px;
+    width: 100px;
+    right:25px;
+    top: 150px;
+    transform: rotate(-90deg);
+  }
+
+  .stuck-at-selector {
+    position: absolute;
+    display: grid;
+    grid-template-columns: repeat(2, 72px);
+    grid-auto-flow: row;
+    grid-gap: 0.5rem;
+    right: 200px;
+    bottom: -25px;
+    padding: 4px;
+  }
+
+  .stuck-at-button {
+    display: flex;
+    background-color: #34a9e4;
+    justify-content: center;
+    align-items: center;
+    height: 32px;
+    padding: 2px;
+  }
+
+  .st-lables {
+    position: absolute;
+    color: red;
+    visibility: hidden;
+  }
+
+  .simulator-table table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin-top: 1rem;
+    border-width: 1px;
+  }
+
+  .tg {
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+
+  .tg td {
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    overflow: hidden;
+    padding: 10px 5px;
+    word-break: normal;
+  }
+
+  .tg th {
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    overflow: hidden;
+    padding: 10px 5px;
+    word-break: normal;
+  }
+
+  .tg .tg-b7zx {
+    background-color: #3385ff;
+    border-color: #000000;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: top;
+  }
+
+  .tg .tg-ogub {
+    background-color: #3385ff;
+    border-color: #000000;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+  }
+
+  .tg .tg-nrix {
+    text-align: center;
+    vertical-align: middle;
+  }
+
+
+
+  
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 18px;  
+  border: none;
+  outline: none;
+  color: black;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+ .dropdown:hover .dropbtn {
+  background-color: lightgray;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: whitesmoke;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border: 2px solid black;
+  border-radius: 0.5rem;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  
+}
+
+.dropdown-content a:hover {
+  background-color: white;
+ 
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}

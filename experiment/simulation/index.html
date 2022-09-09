@@ -1,13 +1,138 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<!-- Add CSS at the head of HTML file -->
-    <link rel="stylesheet" href="./css/main.css">
-</head>
-<body>
-		<!-- Your code goes here-->
+<html lang="en">
 
-	<!-- Add JS at the bottom of HTML file --> 
-        <script src="./js/main.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/table.css">
+    <title>Simulator</title>
+</head>
+
+<body>
+    <div class="simulator-main container">
+        <h2 style="text-align: center; font-weight: bold; font-size: 32px; margin-top: 2rem;">SA0 & SA1 Fault in 3-input
+            odd function
+            Simulator</h2>
+        <div class="circuit-main container">
+            <img src="./images/circuit.png" alt="">
+            <!-- switch A -->
+            <img id="switchA" class="switch" data-value="0" src="./images/switchoff.png" onclick="turnSwitch(this) "
+                alt="Switch A" />
+            <!-- switch B -->
+            <img id="switchB" class="switch" data-value="0" src="./images/switchoff.png" onclick="turnSwitch(this)"
+                alt="Switch B" />
+            <!-- switch C -->
+            <img id="switchC" class="switch" data-value="0" src="./images/switchoff.png" onclick="turnSwitch(this)"
+                alt="Switch C" />
+            <!-- Bulb -->
+            <img class="bulb" src="./images/offg.png" alt="Output Bulb">
+            <!-- Stuck At Selector -->
+            <div class="stuck-at-selector">
+                <h4>Stuck At</h4><span></span>
+                <button class="stuck-at-button" data-value="1" onclick="whereStuckAt(this)">
+                    A SA0
+                </button>
+                <button class="stuck-at-button" data-value="2" onclick="whereStuckAt(this)">
+                    A SA1
+                </button>
+                <button class="stuck-at-button" data-value="3" onclick="whereStuckAt(this)">
+                    B SA0
+                </button>
+                <button class="stuck-at-button" data-value="4" onclick="whereStuckAt(this)">
+                    B SA1
+                </button>
+                <button class="stuck-at-button" data-value="5" onclick="whereStuckAt(this)">
+                    C SA0
+                </button>
+                <button class="stuck-at-button" data-value="6" onclick="whereStuckAt(this)">
+                    C SA1
+                </button>
+                <button class="stuck-at-button" data-value="7" onclick="whereStuckAt(this)">
+                    D SA0
+                </button>
+                <button class="stuck-at-button" data-value="8" onclick="whereStuckAt(this)">
+                    D SA1
+                </button>
+                <button class="stuck-at-button" data-value="9" onclick="whereStuckAt(this)">
+                    E SA0
+                </button>
+                <button class="stuck-at-button" data-value="10" onclick="whereStuckAt(this)">
+                    E SA1
+                </button>
+            </div>
+            <!-- stuck at labels -->
+            <span class="st-lables" id="1" style="left: 190px;
+            top: 170px;">SA0</span>
+            <span class="st-lables" id="2" style="left: 190px;
+            top: 170px;">SA1</span>
+            <span class="st-lables" id="3" style="left: 190px;
+            top: 252px;">SA0</span>
+            <span class="st-lables" id="4" style="left: 190px;
+            top: 252px;">SA1</span>
+            <span class="st-lables" id="5" style="left: 190px;
+            top: 460px;">SA0</span>
+            <span class="st-lables" id="6" style="left: 190px;
+            top: 460px;">SA1</span>
+            <span class="st-lables" id="7" style="left: 540px;
+            top: 210px;">SA0</span>
+            <span class="st-lables" id="8" style="left: 540px;
+            top: 210px;">SA1</span>
+            <span class="st-lables" id="9" style="right: 90px;
+            top: 254px;">SA0</span>
+            <span class="st-lables" id="10" style="right: 90px;
+            top: 254px;">SA1</span>
+        </div>
+        <div
+            style="margin-top: 3rem; margin-right: 10rem; width: 20%; margin-left: auto; display: flex; justify-content: flex-end;">
+            <button onclick="addResult()" class="add-button"
+                style="padding: 0.5rem 1rem; background-color: #27d447; margin: auto;">
+                Add
+            </button>
+            <button onclick="window.location.reload();" class="add-button"
+                style="padding: 0.5rem 1rem; background-color: #27d447; margin: auto;">
+                Reset
+            </button>
+            <button onclick="window.print()" class="add-button"
+                style="padding: 0.5rem 1rem; background-color: #27d447; margin: auto;">
+                Print
+            </button>
+        </div>
+        <div class="simulator-table container"
+            style="width: 900px; margin-bottom: 3rem; display: flex; flex-direction: column; justify-content: center; ">
+
+
+            <table class="tg">
+                <thead>
+                    <tr>
+                        <th class="tg-b7zx" colspan="3">Input</th>
+                        <th class="tg-ogub" rowspan="2">Fault</th>
+                        <th class="tg-ogub" rowspan="2">Output <br>(without Fault)</th>
+                        <th class="tg-ogub" rowspan="2">Output <br>(with Fault)</th>
+                    </tr>
+                    <tr>
+                        <th class="tg-b7zx">X</th>
+                        <th class="tg-b7zx">Y</th>
+                        <th class="tg-b7zx">Z</th>
+                    </tr>
+                </thead>
+                <tbody id="insert-here">
+                    <tr style="background-color: #96ff96;">
+                        <td class="tg-nrix">0</td>
+                        <td class="tg-nrix">0</td>
+                        <td class="tg-nrix">0</td>
+                        <td class="tg-nrix">N/A</td>
+                        <td class="tg-nrix">0</td>
+                        <td class="tg-nrix">0</td>
+                    </tr>
+                </tbody>
+            </table>
+
+
+        </div>
+    </div>
 </body>
+<script src="./js/simulation.js"></script>
+
 </html>

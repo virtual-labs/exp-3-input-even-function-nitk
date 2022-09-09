@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css.css">
+  <link rel="stylesheet" href="css.css">
+  <title>Simulator</title>
+</head>
+
+<body >
+
+        
+        
+        
+
+  <div style="padding-left:10px;border-radius: 1rem;border: 5px solid rgb(97, 94, 94);;margin-left: 5%;margin-right: 5%;margin-top: 3%;">
+    <div class="simulator-main container">
+      <h2 style="text-align: center; margin-top: 1rem;font-family:'Times New Roman';">SA0 & SA1 Fault in 3-input Even
+        Function Simulator</h2>
+      <div class="circuit-main container" id="sim">
+        <img src="../img/new.png" width="960px"  alt="">
+        <!-- switch A -->
+        <img id="switchA" class="switch" data-value="0" src="../img/switchoff.png" onclick="turnSwitch(this) "
+          alt="Switch A" />
+        <!-- switch B -->
+        <img id="switchB" class="switch" data-value="0" src="../img/switchoff.png" onclick="turnSwitch(this)" alt="Switch B" />
+        <!-- switch C -->
+        <img id="switchC" class="switch" data-value="0" src="../img/switchoff.png" onclick="turnSwitch(this)" alt="Switch C" />
+        <!-- Bulb -->
+        <img class="bulb" src="../img/offg.png" alt="Output Bulb">
+        
+        <!-- Stuck At Selector -->
+        <div class="stuck-at-selector">
+          <h5><b>Stuck At</b></h5><span></span>
+          <button class="stuck-at-button" style="border-radius: 0.5rem;" data-value="1" onclick="whereStuckAt(this)">
+            A SA0
+          </button>
+          <button class="stuck-at-button" style="border-radius: 0.5rem;" data-value="2" onclick="whereStuckAt(this)">
+            A SA1
+          </button>
+          <button class="stuck-at-button" style="border-radius: 0.5rem;" data-value="3" onclick="whereStuckAt(this)">
+            B SA0
+          </button>
+          <button class="stuck-at-button" style="border-radius: 0.5rem;" data-value="4" onclick="whereStuckAt(this)">
+            B SA1
+          </button>
+          <button class="stuck-at-button"style="border-radius: 0.5rem;"  data-value="5" onclick="whereStuckAt(this)">
+            C SA0
+          </button>
+          <button class="stuck-at-button" style="border-radius: 0.5rem;" data-value="6" onclick="whereStuckAt(this)">
+            C SA1
+          </button>
+          <button class="stuck-at-button" style="border-radius: 0.5rem;" data-value="7" onclick="whereStuckAt(this)">
+            D SA0
+          </button>
+          <button class="stuck-at-button" style="border-radius: 0.5rem;" data-value="8" onclick="whereStuckAt(this)">
+            D SA1
+          </button>
+          <button class="stuck-at-button" style="border-radius: 0.5rem;" data-value="9" onclick="whereStuckAt(this)">
+            E SA0
+          </button>
+          <button class="stuck-at-button"style="border-radius: 0.5rem;"  data-value="10" onclick="whereStuckAt(this)">
+            E SA1
+          </button>
+        </div>
+        <!-- stuck at labels -->
+        <span class="st-lables" id="1" style="left: 182px;
+            top: 176px;">SA0</span>
+        <span class="st-lables" id="2" style="left: 182px;
+            top: 176px;">SA1</span>
+        <span class="st-lables" id="3" style="left: 182px;
+            top: 258px;">SA0</span>
+        <span class="st-lables" id="4" style="left: 182px;
+            top: 258px;">SA1</span>
+        <span class="st-lables" id="5" style="left: 182px;
+            top: 466px;">SA0</span>
+        <span class="st-lables" id="6" style="left: 182px;
+            top: 466px;">SA1</span>
+        <span class="st-lables" id="7" style="left: 532px;
+            top: 216px;">SA0</span>
+        <span class="st-lables" id="8" style="left: 532px;
+            top: 216px;">SA1</span>
+        <span class="st-lables" id="9" style="right: 98px;
+            top: 260px;">SA0</span>
+        <span class="st-lables" id="10" style="right: 98px;
+            top: 260px;">SA1</span>
+      </div>
+      <div class="simulator-table container"
+        style="width: 900px; margin-bottom: 3rem; display: flex; flex-direction: column; justify-content: center; ">
+        <div style="padding-left:300px;">
+          <button onclick="addResult()" class="add-button"
+            style="padding: 0.5rem 1rem; background-color: #27d447; margin:auto;border-radius:0.5rem ;">
+            Add
+          </button>
+
+          <button style="padding: 0.5rem 1rem; background-color: #27d447;margin:auto;border-radius: 0.5rem;"><a
+              href="index.html">Reset</button>
+        </div>
+        <table class="tg">
+          <thead>
+            <tr>
+              <th class="tg-b7zx" colspan="3">Input</th>
+              <th class="tg-ogub" rowspan="2">Fault</th>
+              <th class="tg-ogub" rowspan="2">Expected Output</th>
+              <th class="tg-ogub" rowspan="2">Faulty Output</th>
+            </tr>
+            <tr>
+              <th class="tg-b7zx">X</th>
+              <th class="tg-b7zx">Y</th>
+              <th class="tg-b7zx">Z</th>
+            </tr>
+          </thead>
+          <tbody id="insert-here">
+            <tr>
+              <td class="tg-nrix">0</td>
+              <td class="tg-nrix">0</td>
+              <td class="tg-nrix">0</td>
+              <td class="tg-nrix">N/A</td>
+              <td class="tg-nrix">0</td>
+              <td class="tg-nrix">1</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</body>
+<script>let stuckAt = 0;
+  let output = 0;
+  const result = [
+    [
+      [1, 0],
+      [0, 1],
+    ],
+    [
+      [0, 1],
+      [1, 0],
+    ],
+  ]
+
+  const switches = document.querySelectorAll('.switch');
+  const stuckAtButton = document.querySelectorAll('.stuck-at-button');
+
+  turnBulb(answer(switches[0].dataset.value, switches[1].dataset.value, switches[2].dataset.value, stuckAt));
+
+  // who is stuck at
+  function whereStuckAt(e) {
+    if (stuckAt == e.dataset.value) {
+      document.getElementById(stuckAt).style.visibility = 'hidden';
+      stuckAt = 0;
+      e.style.backgroundColor = '#34a9e4';
+    }
+    else if (stuckAt == 0) {
+      stuckAt = e.dataset.value;
+      document.getElementById(stuckAt).style.visibility = 'visible';
+      e.style.backgroundColor = '#ff6600';
+    }
+    else {
+      stuckAtButton[stuckAt - 1].style.backgroundColor = '#34a9e4';
+      document.getElementById(stuckAt).style.visibility = 'hidden';
+      stuckAt = e.dataset.value;
+      document.getElementById(stuckAt).style.visibility = 'visible';
+      e.style.backgroundColor = '#ff6600';
+    }
+    output = answer(switches[0].dataset.value, switches[1].dataset.value, switches[2].dataset.value, stuckAt);
+    turnBulb(output);
+  }
+
+
+
+  // funtion to turn switch on and off
+  function turnSwitch(e) {
+    e.src = (e.src.includes("off")) ? "../img/switchon.png" : "../img/switchoff.png";
+    e.dataset.value = (e.dataset.value == 0) ? 1 : 0;
+    output = answer(switches[0].dataset.value, switches[1].dataset.value, switches[2].dataset.value, stuckAt);
+    turnBulb(output);
+  }
+
+  // function to turn bulb on and off based on inputs
+  function turnBulb(output) {
+    let bulb = document.querySelector(".bulb");
+    bulb.src = output == 0 ? "../img/offg.png" : "../img/ong.png";
+  }
+
+  // if fault is at A
+  // answer = result[A][B][C]
+
+  // if fault is at B
+  // answer = result[B][A][C]
+
+  // if fault is at C
+  // answer = result[C][A][B]
+
+  // stuckAt = [NONE ,A = SA0, A = SA1, B = SA0, B = SA1, C = SA0, C = SA1, D = SA0, D = SA1, E = SA0, E = SA1]
+
+  function answer(A, B, C, stuckAt) {
+    if (stuckAt == '0') {
+      return result[A][B][C];
+    }
+    else if (stuckAt == '1') {
+      A = 0;
+      return result[A][B][C];
+    }
+    else if (stuckAt == '2') {
+      A = 1;
+      return result[A][B][C];
+    }
+    else if (stuckAt == '3') {
+      B = 0;
+      return result[B][A][C];
+    }
+    else if (stuckAt == '4') {
+      B = 1;
+      return result[B][A][C];
+    }
+    else if (stuckAt == '5') {
+      C = 0;
+      return result[C][A][B];
+    }
+    else if (stuckAt == '6') {
+      C = 1;
+      return result[C][A][B];
+    }
+    else if (stuckAt == '7') {
+      return C == 0 ? 1 : 0;
+    }
+    else if (stuckAt == '8') {
+      return C;
+    }
+    else if (stuckAt == '9') {
+      return 1;
+    }
+    else if (stuckAt == '10') {
+      return 0;
+    }
+    return 'error';
+  }
+
+  // function to add new row to table
+  function addResult() {
+    let html = `
+                     <tr>
+                        <td class="tg-nrix">${switches[0].dataset.value}</td>
+                        <td class="tg-nrix">${switches[1].dataset.value}</td>
+                        <td class="tg-nrix">${switches[2].dataset.value}</td>
+                        <td class="tg-nrix">${stuckAt == 0 ? 'N/A' : stuckAtButton[stuckAt - 1].innerHTML}</td>
+                        <td class="tg-nrix">${result[switches[0].dataset.value][switches[1].dataset.value][switches[2].dataset.value]}</td>
+                        <td class="tg-nrix">${output}</td>
+                    </tr>
+                    `
+    document.getElementById('insert-here').innerHTML += html;
+  }
+
+
+</script>
+
+
+
+</html>
