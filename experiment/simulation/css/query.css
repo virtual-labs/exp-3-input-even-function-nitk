@@ -1,0 +1,890 @@
+/* rem and em don not depend on html font size in media queries, Instead 1rem = 1em = 16px
+rem: root font size
+em:current font size
+*/
+
+/* *************only screen******* */
+
+/* **************************** */
+/* Below 1344px (Smaller Desktops) */
+/* **************************** */
+@media print {
+  .tg tr:nth-of-type(10n) {
+    page-break-after: always;
+  }
+
+  .sidebar {
+    display: none;
+  }
+  .practice {
+    margin-bottom: 6.5rem; /* Adjust this value as needed */
+  }
+}
+@media (min-width: 1200px) {
+  body {
+    max-width: 120rem;
+    margin: 0 auto;
+  }
+  .canvas__div {
+    padding: 20px;
+  }
+  .model {
+    margin: 26px;
+  }
+  .stuck-at-selector {
+    position: absolute;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-flow: row;
+    grid-gap: 0.5rem;
+    right: 35px;
+    bottom: -25px;
+    padding: 4px;
+    /* background-color: #3385ff; */
+  }
+  #switchA {
+    top: 25%;
+    left: 9%;
+  }
+
+  #switchB {
+    top: 39%;
+    left: 9%;
+  }
+
+  #switchC {
+    top: 74%;
+    left: 9%;
+  }
+  .sa0 {
+    left: 18%;
+    top: 29%;
+  }
+  .sa1 {
+    left: 18%;
+    top: 29%;
+  }
+  .sa3 {
+    left: 18%;
+    top: 29%;
+  }
+  .sa4 {
+    left: 18%;
+    top: 29%;
+  }
+  .sa3 {
+    left: 18%;
+    top: 46%;
+  }
+  .sa4 {
+    left: 18%;
+    top: 46%;
+  }
+  .sa5 {
+    left: 18%;
+    top: 80%;
+  }
+  .sa6 {
+    left: 18%;
+    top: 80%;
+  }
+  .sa7 {
+    left: 54%;
+    top: 38%;
+  }
+  .sa8 {
+    left: 54%;
+    top: 38%;
+  }
+  .sa9 {
+    left: 84%;
+    top: 45%;
+  }
+  .sa10 {
+    left: 84%;
+    top: 45%;
+  }
+}
+
+/* **************************** */
+/* Below 1200px (Lanscape Tablets) */
+/* **************************** */
+
+@media (max-width: 75em) {
+  .title-div h1 {
+    font-size: 2.5rem;
+  }
+  .task-title {
+    font-size: 2rem;
+  }
+  .tool-menu {
+    font-size: 2rem;
+    gap: 2rem;
+  }
+  .icons {
+    width: 3rem;
+    height: 3rem;
+  }
+  .ctrl-icons {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .tool-list span {
+    font-size: 1.2rem;
+  }
+  .canvas {
+    display: block;
+  }
+  .div__control img {
+    width: 3rem;
+    height: 2.8rem;
+  }
+  .canvas__div {
+    padding: 30px;
+  }
+
+  #switchA {
+    top: 25%;
+    left: 9%;
+  }
+
+  #switchB {
+    top: 39%;
+    left: 9%;
+  }
+
+  #switchC {
+    top: 74%;
+    left: 9%;
+  }
+  .sa0 {
+    left: 18%;
+    top: 30%;
+  }
+  .sa1 {
+    left: 18%;
+    top: 30%;
+  }
+  .sa3 {
+    left: 18%;
+    top: 46%;
+  }
+  .sa4 {
+    left: 18%;
+    top: 46%;
+  }
+  .sa5 {
+    left: 18%;
+    top: 80%;
+  }
+  .sa6 {
+    left: 18%;
+    top: 80%;
+  }
+  .sa7 {
+    left: 54%;
+    top: 38%;
+  }
+  .sa8 {
+    left: 54%;
+    top: 38%;
+  }
+  .sa9 {
+    left: 86%;
+    top: 45%;
+  }
+  .sa10 {
+    left: 86%;
+    top: 45%;
+  }
+}
+
+/* **************************** */
+/* Below 944px ( Tablets) */
+/* **************************** */
+
+@media (max-width: 59em) {
+  body {
+    width: 100%;
+    margin: 0;
+  }
+  .tool-link:link,
+  .tool-link:visited {
+    gap: 0.5rem;
+    font-size: 1.4rem;
+    flex-direction: column;
+  }
+
+  .title-div h1 {
+    font-size: 2rem;
+  }
+  .sidebar {
+    position: fixed;
+    padding: 0;
+    bottom: 0;
+    left: 0;
+    flex-direction: row;
+    width: 100%;
+    backdrop-filter: blur(10rem);
+    z-index: 101;
+    justify-content: space-evenly;
+    border-radius: 0;
+    scroll-behavior: auto;
+    margin: 0;
+  }
+  .main {
+    grid-column: 1/-1;
+  }
+  .tool-menu {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+    width: 100%;
+    font-size: 2.4rem;
+    justify-content: space-evenly;
+    padding: 1rem;
+  }
+
+  .canvas {
+    display: block;
+    /* width: 100%;
+    height: 100%; */
+    /* background-color: red; */
+  }
+  .main-section {
+    grid-template-columns: 1fr;
+  }
+  .canvas__div {
+    /* grid-template-columns: 1fr; */
+    padding: 30px;
+  }
+  .canvas {
+    display: block;
+    /* width: 100%;
+    height: 100%; */
+    border: none;
+  }
+  .footer {
+    margin-bottom: 78px;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+  .sa0 {
+    left: 18%;
+    top: 31%;
+  }
+  .sa1 {
+    left: 18%;
+    top: 31%;
+  }
+  .sa3 {
+    left: 18%;
+    top: 46%;
+  }
+  .sa4 {
+    left: 18%;
+    top: 46%;
+  }
+  .sa5 {
+    left: 18%;
+    top: 80%;
+  }
+  .sa6 {
+    left: 18%;
+    top: 80%;
+  }
+  .sa7 {
+    left: 54%;
+    top: 38%;
+  }
+  .sa8 {
+    left: 54%;
+    top: 38%;
+  }
+  .sa9 {
+    left: 86%;
+    top: 45%;
+  }
+  .sa10 {
+    left: 86%;
+    top: 45%;
+  }
+}
+
+/* **************************** */
+/* Below 820px (Smaller Tablets) */
+/* **************************** */
+@media (max-width: 48em) {
+  .main-section {
+    grid-template-columns: 1fr;
+  }
+
+  .canvas__div {
+    padding: 30px;
+  }
+  .canvas {
+    display: block;
+    border: none;
+  }
+  .tool-list span {
+    font-size: 1.6rem;
+  }
+
+  .footer {
+    margin-bottom: 78px;
+  }
+
+  .model {
+    /* margin: 20px; */
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+  .stuck-at-selector {
+    position: absolute;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-flow: row;
+    grid-gap: 0.5rem;
+    right: 35px;
+    bottom: -19px;
+    padding: 4px;
+    /* background-color: #3385ff; */
+  }
+  .sa0 {
+    left: 18%;
+    top: 29%;
+  }
+  .sa1 {
+    left: 18%;
+    top: 29%;
+  }
+  .sa3 {
+    left: 18%;
+    top: 46%;
+  }
+  .sa4 {
+    left: 18%;
+    top: 46%;
+  }
+  .sa5 {
+    left: 17%;
+    top: 80%;
+  }
+  .sa6 {
+    left: 17%;
+    top: 80%;
+  }
+  .sa7 {
+    left: 54%;
+    top: 35%;
+  }
+  .sa8 {
+    left: 54%;
+    top: 35%;
+  }
+  .sa9 {
+    left: 86%;
+    top: 45%;
+  }
+  .sa10 {
+    left: 86%;
+    top: 45%;
+  }
+}
+
+/* **************************** */
+/* Below 704px (Smaller Tablets) */
+/* **************************** */
+@media (max-width: 44em) {
+  .canvas__div {
+    /* grid-template-columns: 1fr; */
+    padding: 30px;
+  }
+  .stuck-at-selector {
+    position: absolute;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-flow: row;
+    grid-gap: 0.5rem;
+    right: 35px;
+    bottom: -35px;
+    padding: 4px;
+    /* background-color: #3385ff; */
+  }
+  .img-div {
+    flex-direction: column;
+  }
+  .title-div {
+    gap: 0rem;
+    text-align: center;
+  }
+  .round {
+    width: 0.6rem;
+    height: 0.6rem;
+  }
+  .logo-div {
+    width: 6.5rem;
+  }
+  .main__task-div:nth-child(4) {
+    margin-bottom: 6rem;
+  }
+
+  .cross-img {
+    width: 60%;
+  }
+  .canvas {
+    display: block;
+    /* width: 100%;
+    height: 100%; */
+    border: none;
+  }
+  .footer {
+    margin-bottom: 78px;
+  }
+  .model {
+    /* margin: 50px; */
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+
+  .sa0 {
+    left: 18%;
+    top: 27%;
+  }
+  .sa1 {
+    left: 18%;
+    top: 27%;
+  }
+  .sa3 {
+    left: 18%;
+    top: 46%;
+  }
+  .sa4 {
+    left: 18%;
+    top: 46%;
+  }
+  .sa5 {
+    left: 17%;
+    top: 80%;
+  }
+  .sa6 {
+    left: 17%;
+    top: 80%;
+  }
+  .sa7 {
+    left: 54%;
+    top: 35%;
+  }
+  .sa8 {
+    left: 54%;
+    top: 35%;
+  }
+  .sa9 {
+    left: 86%;
+    top: 45%;
+  }
+  .sa10 {
+    left: 86%;
+    top: 45%;
+  }
+  .grid-container .bulb {
+    position: absolute;
+    top: 25%; /* Position the bulb relative to the circuit image */
+    left: 87%; /* Adjust these values for the correct position on the circuit */
+    width: 10%; /* Use a percentage for the bulb size to make it responsive */
+    height: auto;
+    transform: rotate(-90deg);
+  }
+}
+
+/* **************************** */
+/* Below 540px (Smaller Tablets) */
+/* **************************** */
+@media (max-width: 34em) {
+  /* .container {
+    gap: 1rem;
+  } */
+  .canvas__div {
+    grid-template-columns: 1fr;
+    /* padding: 30px; */
+  }
+  .div1,
+  .div2 {
+    height: 200px; /* Adjust height for smaller screens */
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  .stuck-at-selector {
+    position: absolute;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-flow: row;
+    grid-gap: 0.5rem;
+    right: 135px;
+    bottom: -18px;
+    padding: 4px;
+    /* background-color: #3385ff; */
+  }
+
+  .title-div h1 {
+    /* padding: 0.2rem; */
+
+    font-size: 1.6rem;
+    /* text-align: center; */
+  }
+
+  .logo-div {
+    width: 4.5rem;
+  }
+  .div__control {
+    gap: 2rem;
+    /* top: 1.8rem;
+    right: 1.5rem; */
+  }
+  .ctrl-icons {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+  .tool-menu {
+    gap: 1.5rem;
+  }
+  .tool-list span {
+    font-size: 1.2rem;
+  }
+  .task-title {
+    font-size: 1.7rem;
+  }
+  canvas {
+    width: 100%;
+  }
+  label,
+  select,
+  input,
+  p {
+    display: inline-block;
+    font-size: 1.5rem;
+  }
+  .main {
+    gap: 0.5rem;
+  }
+  .main-section {
+    gap: 0.5rem;
+  }
+  .sidebar {
+    border-radius: 0;
+  }
+  .canvas {
+    display: block;
+    /* width: 100%;
+    height: 100%; */
+    border: none;
+  }
+  .div__control img {
+    width: 2.7rem;
+    height: 2.5rem;
+  }
+  .tooltip {
+    font-size: 1rem;
+  }
+  .footer {
+    margin-bottom: 78px;
+  }
+
+  .practice {
+    margin: 0;
+    padding: 0;
+  }
+  .model {
+    margin: 60px;
+  }
+
+  .grid-container .bulb {
+    position: absolute;
+    top: 25%; /* Position the bulb relative to the circuit image */
+    left: 87%; /* Adjust these values for the correct position on the circuit */
+    width: 10%; /* Use a percentage for the bulb size to make it responsive */
+    height: auto;
+    transform: rotate(-90deg);
+  }
+  #switchA {
+    top: 18%;
+    left: 9%;
+  }
+
+  #switchB {
+    top: 35%;
+    left: 9%;
+  }
+
+  #switchC {
+    top: 81%;
+    left: 9%;
+  }
+  .sa0 {
+    left: 18%;
+    top: 24%;
+  }
+  .sa1 {
+    left: 18%;
+    top: 24%;
+  }
+  .sa3 {
+    left: 18%;
+    top: 44%;
+  }
+  .sa4 {
+    left: 18%;
+    top: 44%;
+  }
+  .sa5 {
+    left: 18%;
+    top: 90%;
+  }
+  .sa6 {
+    left: 18%;
+    top: 90%;
+  }
+  .sa7 {
+    left: 55%;
+    top: 33%;
+  }
+  .sa8 {
+    left: 55%;
+    top: 33%;
+  }
+  .sa9 {
+    left: 86%;
+    top: 45%;
+  }
+  .sa10 {
+    left: 86%;
+    top: 45%;
+  }
+}
+
+@media (max-width: 30em) {
+  #switchA {
+    top: 22%;
+    left: 9%;
+  }
+
+  #switchB {
+    top: 39%;
+    left: 9%;
+  }
+
+  #switchC {
+    top: 79%;
+    left: 9%;
+  }
+  .sa0 {
+    left: 18%;
+    top: 30%;
+  }
+  .sa1 {
+    left: 18%;
+    top: 30%;
+  }
+  .sa3 {
+    left: 18%;
+    top: 46%;
+  }
+  .sa4 {
+    left: 18%;
+    top: 46%;
+  }
+  .sa5 {
+    left: 18%;
+    top: 84%;
+  }
+  .sa6 {
+    left: 18%;
+    top: 84%;
+  }
+  .sa7 {
+    left: 54%;
+    top: 36%;
+  }
+  .sa8 {
+    left: 54%;
+    top: 36%;
+  }
+  .sa9 {
+    left: 86%;
+    top: 45%;
+  }
+  .sa10 {
+    left: 86%;
+    top: 45%;
+  }
+}
+
+@media (max-width: 27em) {
+  .sidebar {
+    position: fixed;
+    padding: 0;
+    bottom: 0;
+    left: 0;
+    flex-direction: row;
+    width: 100%;
+    backdrop-filter: blur(10rem);
+    z-index: 101;
+    justify-content: space-evenly;
+    border-radius: 0;
+    scroll-behavior: auto;
+  }
+  .tool-menu {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    width: 100%;
+    font-size: 2.4rem;
+    justify-content: space-evenly;
+    padding: 1rem;
+  }
+  .canvas__div {
+    min-height: calc(100vh - 7 * 5.6rem);
+    overflow: hidden;
+    margin: 0;
+    padding: 0rem;
+    /* grid-template-columns: 1fr;
+    overflow: hidden; */
+  }
+  .practice {
+    margin: 0;
+    padding: 0;
+  }
+  /* .practice {
+    padding: 0.5rem;
+  } */
+  .quiz-div {
+    padding: 0.5rem;
+    width: 100%;
+  }
+  .answers {
+    grid-template-columns: 1fr;
+  }
+  .practice-step-no {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .footer {
+    margin-bottom: 78px;
+  }
+  .model {
+    /* margin: 65px; */
+  }
+  .canvas__div {
+    grid-template-columns: 1fr;
+    padding: 40px;
+    /* padding: 30px; */
+  }
+  .div1,
+  .div2 {
+    height: 220px; /* Adjust height for smaller screens */
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  .stuck-at-selector {
+    position: absolute;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-flow: row;
+    grid-gap: 0.5rem;
+    right: 60px;
+    bottom: 11px;
+    padding: 4px;
+    /* background-color: #3385ff; */
+  }
+  .grid-container .bulb {
+    position: absolute;
+    top: 33%; /* Position the bulb relative to the circuit image */
+    left: 87%; /* Adjust these values for the correct position on the circuit */
+    width: 10%; /* Use a percentage for the bulb size to make it responsive */
+    height: auto;
+    transform: rotate(-90deg);
+  }
+  #switchA {
+    top: 31%;
+    left: 9%;
+  }
+
+  #switchB {
+    top: 42%;
+    left: 9%;
+  }
+
+  #switchC {
+    top: 68%;
+    left: 9%;
+  }
+  .sa0 {
+    left: 18%;
+    top: 35%;
+  }
+  .sa1 {
+    left: 18%;
+    top: 35%;
+  }
+  .sa3 {
+    left: 18%;
+    top: 46%;
+  }
+  .sa4 {
+    left: 18%;
+    top: 46%;
+  }
+  .sa5 {
+    left: 18%;
+    top: 72%;
+  }
+  .sa6 {
+    left: 18%;
+    top: 72%;
+  }
+  .sa7 {
+    left: 53%;
+    top: 41%;
+  }
+  .sa8 {
+    left: 53%;
+    top: 41%;
+  }
+  .sa9 {
+    left: 84%;
+    top: 46%;
+  }
+  .sa10 {
+    left: 84%;
+    top: 46%;
+  }
+}
+/* 
+
+- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+ */
