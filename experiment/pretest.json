@@ -2,7 +2,7 @@
   "version": 1.0,
   "questions": [
     {
-      "question": "1. Electronic circuits that operate on one or more input signals to produce standard output—",
+      "question": "Electronic circuits designed to process one or more input signals and generate a defined output is ______________________ .",
       "answers": {
         "a": "a. Parallel circuits",
         "b": "b. Logic signals",
@@ -12,14 +12,14 @@
       "explanations": {
         "a": "",
         "b": "",
-        "c": "",
+        "c": "Logic gates are circuits that take one or more input signals and produce a specific output based on logic rules. They perform basic operations like AND, OR, and NOT in digital electronics.",
         "d": ""
       },
       "correctAnswer": "c",
       "difficulty": "intermediate"
     },
     {
-      "question": "2. Single stuck line is used for—",
+      "question": "What is the purpose of a single stuck-at fault model in circuit testing?",
       "answers": {
         "a": "a. Pre-Manufacturing testing",
         "b": "b. Post-Manufacturing Testing",
@@ -28,7 +28,7 @@
       },
       "explanations": {
         "a": "",
-        "b": "",
+        "b": "Single stuck-at faults simulate defects like a wire stuck at 0 or 1 after fabrication. They help detect physical faults during post-manufacturing testing of digital circuits.",
         "c": "",
         "d": ""
       },
