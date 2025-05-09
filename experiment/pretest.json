@@ -78,7 +78,7 @@
         "d": "Only when both inputs are high"
       },
       "explanations": {
-        "a": "The E-XOR gate produces a high output (1) only when there is a difference in the input values. This property is what makes it "exclusive" — it outputs 1 for different inputs (0,1 or 1,0) and 0 for identical inputs (0,0 or 1,1).",
+        "a": "The E-XOR gate produces a high output (1) only when there is a difference in the input values. This property is what makes it 'exclusive' — it outputs 1 for different inputs (0,1 or 1,0) and 0 for identical inputs (0,0 or 1,1).",
         "b": "",
         "c": "",
         "d": ""
