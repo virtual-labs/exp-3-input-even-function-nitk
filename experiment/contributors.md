@@ -9,10 +9,9 @@
 
 | SNo. | Name | Institute |
 | :--: | :-- | :-------: |
-|  1   | Shwetha | NITK |
+|  1   | Akshaya | NITK |
 |  2   | Vismaya M Kumar | NITK |
-|  3   | Akshaya | NITK |
-|  4   | Anusha B Salian | NITK |
+|  3   | Anusha B Salian | NITK |
 
 
 
