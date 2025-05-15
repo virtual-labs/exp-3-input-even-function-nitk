@@ -15,11 +15,11 @@
 <strong>Truth Table:</strong> <p style="text-align:justify;">A truth table is a mathematical table used in logic—specifically in Boolean algebra, digital electronics, and computer science—to represent the outputs of a logic circuit or Boolean function for all possible combinations of inputs.</p>
 
 <table style="text-align:center;">
-  <tr><th>A</th><th>B</th><th>Output (A AND B)</th></tr>
-  <tr><td>0</td><td>0</td><td>0</td></tr>
-  <tr><td>0</td><td>1</td><td>0</td></tr>
-  <tr><td>1</td><td>0</td><td>0</td></tr>
-  <tr><td>1</td><td>1</td><td>1</td></tr>
+  <tr  style="text-align:center;"><th>A</th><th>B</th><th>Output (A AND B)</th></tr>
+  <tr  style="text-align:center;"><td>0</td><td>0</td><td>0</td></tr>
+  <tr style="text-align:center;"><td>0</td><td>1</td><td>0</td></tr>
+  <tr style="text-align:center;"><td>1</td><td>0</td><td>0</td></tr>
+  <tr style="text-align:center;"><td>1</td><td>1</td><td>1</td></tr>
 </table>
 
 <strong>Venn Diagram:</strong> <p style="text-align:justify;">A Venn diagram is a visual tool that shows relationships between different sets using overlapping circles. In logic, it helps represent operations like AND, OR, and NOT clearly.</p>
