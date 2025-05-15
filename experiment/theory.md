@@ -14,7 +14,7 @@
 
 <strong>Truth Table:</strong> <p style="text-align:justify;">A truth table is a mathematical table used in logic—specifically in Boolean algebra, digital electronics, and computer science—to represent the outputs of a logic circuit or Boolean function for all possible combinations of inputs.</p>
 
-<table>
+<table style="text-align:center;">
   <tr><th>A</th><th>B</th><th>Output (A AND B)</th></tr>
   <tr><td>0</td><td>0</td><td>0</td></tr>
   <tr><td>0</td><td>1</td><td>0</td></tr>
