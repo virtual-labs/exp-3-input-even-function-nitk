@@ -4,7 +4,9 @@
 
 <p style="text-align:justify;">The complement of an odd function is an even function. The complement of an odd function (an even function) is obtained by replacing the output gate with an Exclusive-NOR gate</p>
 
-<p style="text-align:justify;">Combinational circuit is a circuit in which we combine the different gates in the circuit, for example encoder, decoder, multiplexer and demultiplexer. Some of the characteristics of combinational circuits are following −</p>
+<p style="text-align:justify;">Combinational circuit is a circuit in which we combine the different gates in the circuit, for example encoder, decoder, multiplexer and demultiplexer.</p> 
+
+<p style="text-align:justify;">The characteristics of combinational circuits</p>
 
 1. The output of combinational circuit at any instant of time, depends only on the levels present at input terminals.
 2. The combinational circuit do not use any memory. The previous state of input does not have any effect on the present state of the circuit.
@@ -24,7 +26,7 @@
 
 <strong>Venn Diagram:</strong> <p style="text-align:justify;">A Venn diagram is a visual tool that shows relationships between different sets using overlapping circles. In logic, it helps represent operations like AND, OR, and NOT clearly.</p>
 
-<center><img src="images/venndiagram.png"></center>
+<center><img src="images/venndiagram.png" width="60%"></center>
 
 <strong>Minimal terms (minterms):</strong> <p style="text-align:justify;">Minimal terms are the simplest form of product terms in a Boolean function where each variable appears once in either complemented or uncomplemented form.</p>
 
