@@ -2,33 +2,33 @@
   "version": 1.0,
   "questions": [
     {
-      "question": "1. Electronic circuits that operate on one or more input signals to produce standard output—",
+      "question": "Electronic circuits designed to process one or more input signals and generate a defined output is ______________________ .",
       "answers": {
-        "a": "a. Parallel circuits",
-        "b": "b. Logic signals",
-        "c": "c. Logic gates",
-        "d": "d. Series circuits"
+        "a": "Parallel circuits",
+        "b": "Logic signals",
+        "c": "Logic gates",
+        "d": "Series circuits"
       },
       "explanations": {
         "a": "",
         "b": "",
-        "c": "",
+        "c": "Logic gates are circuits that take one or more input signals and produce a specific output based on logic rules. They perform basic operations like AND, OR, and NOT in digital electronics.",
         "d": ""
       },
       "correctAnswer": "c",
       "difficulty": "intermediate"
     },
     {
-      "question": "2. Single stuck line is used for—",
+      "question": "What is the purpose of a single stuck-at fault model in circuit testing?",
       "answers": {
-        "a": "a. Pre-Manufacturing testing",
-        "b": "b. Post-Manufacturing Testing",
-        "c": "c. Design Testing",
-        "d": "d. None of the above"
+        "a": "Pre-Manufacturing testing",
+        "b": "Post-Manufacturing Testing",
+        "c": "Design Testing",
+        "d": "None of the above"
       },
       "explanations": {
         "a": "",
-        "b": "",
+        "b": "Single stuck-at faults simulate defects like a wire stuck at 0 or 1 after fabrication. They help detect physical faults during post-manufacturing testing of digital circuits.",
         "c": "",
         "d": ""
       },
@@ -36,15 +36,15 @@
       "difficulty": "beginner"
     },
     {
-      "question": "3. Which of the following are universal gates?",
+      "question": "Which of the following are universal gates?",
       "answers": {
-        "a": " a. NAND, NOR",
-        "b": "  b. NAND, OR",
-        "c": " c. NOT, XOR",
-        "d": " d. NONE OF THE ABOVE"
+        "a": "NAND, NOR",
+        "b": "NAND, OR",
+        "c": "NOT, XOR",
+        "d": "NONE OF THE ABOVE"
       },
       "explanations": {
-        "a": "",
+        "a": "NAND and NOR gates are called universal gates because you can build any other logic gate (AND, OR, NOT, etc.) using just one of them.",
         "b": "",
         "c": "",
         "d": ""
@@ -53,38 +53,38 @@
       "difficulty": "advanced"
     },
     {
-      "question": "4. Output of XOR gate is high when—",
+      "question": "When does the XOR gate produce a high output?",
       "answers": {
-        "a": "a. Both inputs are 1",
-        "b": "b. Both inputs are 1",
-        "c": " c. One of them is 1 other is 0 and vice versa",
-        "d": " d. None of these"
+        "a": "When both inputs are 1",
+        "b": "When both inputs are 0",
+        "c": "When one input is 1 and the other is 0",
+        "d": "When both inputs are either 0 or 1"
       },
       "explanations": {
         "a": "",
         "b": "",
-        "c": "",
+        "c": "An XOR (exclusive OR) gate outputs a high (1) when its inputs are different (one is 0, the other is 1).If both inputs are the same (both 0 or both 1), the output is low (0).",
         "d": ""
       },
       "correctAnswer": "c",
       "difficulty": "intermediate"
     },
     {
-      "question": "5. Output of E-XOR gate is high when—",
+      "question": "Output of E- XOR (Exclusive OR) gate is high when _____________________________ .",
       "answers": {
-        "a": " a. One input is low , other is high and vice versa.",
-        "b": " b. Only when both inputs are zero",
-        "c": "c. Either both inputs are 0 or both are 1",
-        "d": "d. Only when both inputs are 1"
+        "a": "When one input is low and the other is high",
+        "b": "Only when both inputs are low",
+        "c": "When both inputs are equal (either 0 or 1)",
+        "d": "Only when both inputs are high"
       },
       "explanations": {
-        "a": "",
+        "a": "The E-XOR gate produces a high output (1) only when there is a difference in the input values. This property is what makes it 'exclusive' — it outputs 1 for different inputs (0,1 or 1,0) and 0 for identical inputs (0,0 or 1,1).",
         "b": "",
         "c": "",
         "d": ""
       },
-      "correctAnswer": "c",
-      "difficulty": "advanced"
+      "correctAnswer": "a",
+      "difficulty": "beginner"
     }
    
   ]
