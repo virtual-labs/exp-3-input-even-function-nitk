@@ -26,7 +26,7 @@
 
 <strong>Venn Diagram:</strong> <p style="text-align:justify;">A Venn diagram is a visual tool that shows relationships between different sets using overlapping circles. In logic, it helps represent operations like AND, OR, and NOT clearly.</p>
 
-<center><img src="images/venndiagram.png" width="60%"></center>
+<center><img src="images/venndiagram.png"></center>
 
 <strong>Minimal terms (minterms):</strong> <p style="text-align:justify;">Minimal terms are the simplest form of product terms in a Boolean function where each variable appears once in either complemented or uncomplemented form.</p>
 
