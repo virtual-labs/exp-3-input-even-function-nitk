@@ -16,10 +16,10 @@
 
 <table style="text-align:center;">
   <tr  style="text-align:center;"><th>A</th><th>B</th><th>Output (A AND B)</th></tr>
-  <tr  style="text-align:center;"><td>0</td><td>0</td><td>0</td></tr>
-  <tr style="text-align:center;"><td>0</td><td>1</td><td>0</td></tr>
-  <tr style="text-align:center;"><td>1</td><td>0</td><td>0</td></tr>
-  <tr style="text-align:center;"><td>1</td><td>1</td><td>1</td></tr>
+  <tr  style="text-align:center;"><td>0</td><td>0</td><td style="text-align:center;">0</td></tr>
+  <tr style="text-align:center;"><td>0</td><td>1</td><td style="text-align:center;">0</td></tr>
+  <tr style="text-align:center;"><td>1</td><td>0</td><td style="text-align:center;">0</td></tr>
+  <tr style="text-align:center;"><td>1</td><td>1</td><td style="text-align:center;">1</td></tr>
 </table>
 
 <strong>Venn Diagram:</strong> <p style="text-align:justify;">A Venn diagram is a visual tool that shows relationships between different sets using overlapping circles. In logic, it helps represent operations like AND, OR, and NOT clearly.</p>
