@@ -1,0 +1,14 @@
+
+/home/runner/work/exp-3-input-even-function-nitk/exp-3-input-even-function-nitk/experiment/simulation/js/script.js
+    4:7   warning  'stepNumber' is assigned a value but never used  no-unused-vars
+    5:7   warning  'stepTitle' is assigned a value but never used   no-unused-vars
+    6:7   warning  'taskTitle' is assigned a value but never used   no-unused-vars
+    8:10  warning  'Refresh' is defined but never used              no-unused-vars
+   10:2   warning  Unnecessary semicolon                            no-extra-semi
+   31:12  warning  'whereStuckAt' is defined but never used         no-unused-vars
+   56:12  warning  'turnSwitch' is defined but never used           no-unused-vars
+  113:12  warning  'addResult' is defined but never used            no-unused-vars
+
+✖ 8 problems (0 errors, 8 warnings)
+  0 errors and 1 warning potentially fixable with the `--fix` option.
+
