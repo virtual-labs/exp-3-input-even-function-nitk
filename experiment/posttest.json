@@ -2,38 +2,89 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "This is a Sample Question 1?",
+      "question": "The expression of an XOR gate is?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "A’.B+A.B’",
+        "b": "A.B+A’.B’",
+        "c": "A.B’",
+        "d": "A.A’+B.B’"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "The XOR gate outputs high when the inputs are different, and its Boolean expression is A’.B + A.B’, which captures this behavior.",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "a",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "Which of the following is the Boolean expression for an EX-NOR gate?",
+      "answers": {
+        "a": "A’.B",
+        "b": "A.B+A’.B’",
+        "c": "A’.B+A.B’",
+        "d": "A.A’+B.B"
+      },
+      "explanations": {
+        "a": "",
+        "b": "An EX-NOR gate outputs high when both inputs are the same (either 0,0 or 1,1).",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "b",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "For a circuit with k lines, __________ single stuck-at faults are possible? ",
+      "answers": {
+        "a": "k",
+        "b": "2k",
+        "c": "k/2",
+        "d": "k^2"
+      },
+      "explanations": {
+        "a": "",
+        "b": "Each line in a circuit can have two possible stuck-at faults: stuck-at-0 and stuck-at-1. So, for k lines, the total number of single stuck-at faults is 2k.",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "b",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "When logic gates are interconnected to form a logic network, it is referred to as a ______ logic circuit.",
+      "answers": {
+        "a": "Combinational",
+        "b": "Sequential",
+        "c": "Hardwires",
+        "d": "Systematic"
+      },
+      "explanations": {
+        "a": "A combinational logic circuit is formed when logic gates are connected such that the output depends only on the current inputs.",
+        "b": "",
+        "c": "",
+        "d": ""
       },
       "correctAnswer": "a",
       "difficulty": "beginner"
     },
     {
-      "question": "This is a Sample Question 2?",
+      "question": "What is the total number of distinct multiple stuck-at faults possible in a circuit with n lines?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "3^n",
+        "b": "3^n-1",
+        "c": "2^n-1",
+        "d": "2"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "",
+        "b": " In a circuit with n lines, each line can be in one of three states: stuck-at-0, stuck-at-1, or fault-free. This results in a total of 3ⁿ possible combinations of fault conditions. However, the scenario where all lines are fault-free (i.e., no faults) is not considered a fault condition. Therefore, the total number of distinct multiple stuck-at fault combinations is 3ⁿ – 1.",
+        "c": "",
+        "d": ""
       },
-      "correctAnswer": "c",
-      "difficulty": "beginner"
+      "correctAnswer": "b",
+      "difficulty": "advanced"
     }
   ]
 }
